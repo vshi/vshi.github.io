@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Add jQuery library -->
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="js/vs.js"></script>
+        
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="js/jquery.fancybox.css" type="text/css" media="screen" />
+        <link type="text/css" rel="stylesheet" href="spreadsheet.css"/>    
+        <title>Victoria Shi</title>
+        <meta name="description" content="">
+    </head>
+    
+    <body>
+        <div id="navbar" class="col-12">
+            <div class="line-seperator" id="header-line"></div>
+            <ul>
+                <li><div class="navbar-link">
+                    <a href="index.html">HOME</a>
+                    </div>
+                    <div class="stop"></div></li>
+                <li><div class="navbar-link">
+                    <a href="code.html">CODE</a>
+                    </div>
+                    <div class="stop"></div></li>
+                <li><div class="navbar-link">
+                    <a href="interactive.html">INTERACTION</a>
+                    </div>
+                    <div class="stop"></div></li>
+                <li><div class="navbar-link">
+                    <a href="graphic.html">GRAPHIC</a>
+                    </div>
+                    <div class="stop"></div></li>
+                <li>
+                    <div class="navbar-link">
+                    <a href="illustration.html">ILLUSTRATION</a>
+                    </div>
+                    <div class="stop"></div></li>
+                <li>
+                    <div class="navbar-link">
+                    <a href="web.html">WEB</a>
+                    </div>
+                    <div class="stop"></div></li>
+            </ul>
+        </div>
+        <div class="parallax-window" id="header" data-parallax="scroll" data-image-src="images/smart_suds/laundromat.jpg" data-positionX="10px" data-positionY="10px">
+            <div style="display: table-cell; text-align: center; vertical-align: middle">
+                <h1 style="font-weight: 400; color:white">SMART SUDS</h1>
+                <p style="color:white">smart laundry machine companion application</p>
+            </div>
+        </div>
+        <div class="col-12" id="smart-suds-portfolio">
+            <div class="smart-suds-portfolio">
+                <p>In Spring 2015, I took CS160, UC Berkeley's User Interface Design course. Throughout the semester, I and three other team members worked on developing a mobile companion application for an IOT (internet of things) smart laundry machine system.</p>
+            <div class="smart-suds-title">
+                Initial Sketches
+            </div>
+            <p>These sketches helped our team clarify the app's features and what information it would display. They also provided a rough feel for the flow of the app's various screens.</p>
+            <p>We planned for the app to allow users to
+                <ul>
+                    <li>Find nearby laundromats and their prices</li>
+                    <li>Check for free machines</li>
+                    <li>Reserve machines</li>
+                    <li>Control machine settings</li>
+                    <li>Securely lock and unlock machines</li>
+                    <li>View progress and remaining time for different laundry jobs</li>
+                    <li>Receive alerts for finished laundry</li>
+                    <li>Pay for laundry</li>
+                </ul></p>
+            <img src="images/smart_suds/app_design_1.jpg">
+            <img src="images/smart_suds/app_design_2.jpg">
+            <img src="images/smart_suds/app_design_3.jpg">
+            
+            <div class="smart-suds-title">
+                Contextual Inquiry and Task Analysis
+            </div>
+            <p>We observed and interviewed users at various local laundromats.</p>
+            <p>Time and convenience was of the essence for our interviewees. Their most major problems lay in wasting time waiting for machines, forgetting to pick up their laundry in time, and being forced to wait at the laundromat for fear of their laundry being stolen.</p>
+            <p>Thus, our application's main value would be in streamlining the public-laundry process by reducing wait times. Features such as locating nearby free machines and reserving them in advance, being able to lock and unlock machines from the app, and receiving alerts when laundry was completed were essential.</p>
+            <img src="images/smart_suds/contextual_inquiry_combined.jpg" style="width:100%">
+            <div class="smart-suds-title">
+                Low-Fidelity Flowmap
+            </div>
+            <a class="fancybox-img" href="images/smart_suds/flow.png"><img src="images/smart_suds/flow.png"></a>
+            <a class="fancybox-img" href="images/smart_suds/flow_laundromats.png"><img src="images/smart_suds/flow_laundromats.png"></a>
+            <a class="fancybox-img" href="images/smart_suds/flow_unlock.png"><img src="images/smart_suds/flow_unlock.png"></a>
+            <a class="fancybox-img" href="images/smart_suds/flow_settings.png"><img src="images/smart_suds/flow_settings.png"></a>
+            <a class="fancybox-img" href="images/smart_suds/flow_payment.png"><img src="images/smart_suds/flow_payment.png"></a>
+            ]
+            
+            
+            
+            <p>For the initial flowmap, I focused on dividing tasks into different sets of screens.</p>
+            <p>In the following video prototype, we demonstrated 5 potential user tasks: checking for available machines, paying for laundry, using a preset laundry setting, checking a reminder, and unlocking a laundry machine.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gyWWo6b_JpQ" frameborder="0" allowfullscreen></iframe>
+            <div class="smart-suds-title">
+                Low-Fidelity User Test
+            </div>
+            <img src="images/smart_suds/low_fidelity_user_test.jpg">
+            <p>We tested our low-fidelity mockups at local laundromats. For each participant, we explained the purpose behind our application before asking him or her to complete our three tasks: unlocking the machine (easy), finding a nearby laundromat and reserving a washer (medium), and scanning a clothing item to create and save a laundry preset (hard).</p>
+            <p>Major insights from these interviews were that</p>
+            <ul>
+                <li>Various interface elements were confusing (numbers on the home screen, plus-button on the laundromat screen)</li>
+                <li>On some screens it was possible for the user to become trapped and unable to backtrack to the home screen</li>
+                <li>Users were hesitant to create their own settings, and were more comfortable with using and modifying presets</li>
+                <li>An onboarding process or help documentation would be useful</li>
+            </ul>
+            <div class="smart-suds-title">
+                Wireframes
+            </div>
+            <p>This project is still in progress. So far, we have hi-fidelity layouts for the home, map, laundromat info, and reserve a machine screens.</p>
+            <a class="fancybox-img" href="images/smart_suds/wireframes.png"><img src="images/smart_suds/wireframes.png"></a>
+            <div class="smart-suds-title">
+                Hi-Fidelity Mockups
+            </div>
+            <p>This project is still in progress. So far, we have hi-fidelity layouts for the home screen.</p>
+            <a class="fancybox-img" href="images/smart_suds/hi-fidelity_home.png"><img src="images/smart_suds/hi-fidelity_home.png"></a>
+            </div>
+        </div>
+        
+        <!--FOOTER-->
+        <div class="row" id="footer">
+            <div class="col-12">
+                <p>&copy; 2015 Victoria Shi</p>
+            </div>
+        </div>
+        <!--FOOTER_END-->
+        
+    </body>
+    
+</html>

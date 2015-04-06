@@ -1,3 +1,4 @@
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
@@ -426,16 +427,7 @@ th {
 }
 
 /*<!-- DEFAULT COLORS -->
-#243757: dblue
-#3a5f6f: blue
-#dad5b7: tan
-#c2b79b: brown
-#665e52: dbrown
-        <meta name="color:lgreen" content="#E0E086"/>
-        <meta name="color:green" content="#acbe14"/>
-        <meta name="color:black" content="#2c1f19"/>
-        <meta name="color:turq" content="#327a76"/>
-        <meta name="color:lturq" content="#bce2d7"/>
+
              
         <!-- END DEFAULT COLORS -->*/
 
@@ -496,6 +488,7 @@ a{
     transition: .15s ease-in;
 }
 #navbar{
+    display: block;
     height: 20vmin;
     background-color: white;
 }
@@ -548,6 +541,7 @@ h1{
     letter-spacing: 0.5vmin;
 }
 .parallax-window{
+    display: block;
     background: transparent;
 }
 #header{
@@ -592,6 +586,46 @@ h1{
 .parallax-window p{
     font-size: 2vmax;
     font-weight: 300;
+}
+#smart-suds-portfolio{
+    background-color: #ecf0f1;
+}
+.smart-suds-portfolio{
+    max-width: 800px;
+    background-color: white;
+    padding: 30px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.smart-suds-portfolio > *{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/*green: #8aba60*/
+.smart-suds-title{
+    font-family: "Montserrat";
+    font-size: 3vmax;
+    color: #8aba60;
+}
+.smart-suds-portfolio p{
+    text-align: left;
+    text-indent: 15px;
+    font-family: "Vollkorn";
+    font-weight: 400;
+    font-size: 12px;
+}
+.smart-suds-portfolio ul{
+    padding-left: 40px;
+}
+.smart-suds-portfolio ul li{
+    list-style-type: disc;
+    text-align: left;
+    font-family: "Vollkorn";
+    font-weight: 400;
+    font-size: 12px;
+}
+.smart-suds-portfolio img{
+    width: 80%;
 }
 .index-portfolio{
     background-color: #ecf0f1;
