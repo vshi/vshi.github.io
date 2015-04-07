@@ -19,6 +19,10 @@ $(document).ready(function(){
         
     }
 });
+    
+    $(".fancybox-img").fancybox({
+        closeClick : true,
+	});
 
 });
 
