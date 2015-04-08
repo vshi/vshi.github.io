@@ -507,7 +507,7 @@ a{
     top: 57px;
     height: 10px;
     z-index: 1;
-    background-color: #E73C53;
+    background-color: #E73C53; /*red */
 }
 
 .navbar-link{
