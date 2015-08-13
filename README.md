@@ -1,1 +1,1 @@
-portfolio wip
+Victoria Shi’s personal portfolio - Summer 2015.
