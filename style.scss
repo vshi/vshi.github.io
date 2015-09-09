@@ -410,7 +410,7 @@ a{
         }
         #living-community{
             .img-container{ width: 50%; }
-            .screens{ flex-direction: row; }
+            .screens{ @include flex-direction(row); }
             .line{ background-color: lightgray; }
         }
     }
@@ -427,7 +427,7 @@ a{
         @include align-items(center);
     }
     .illustration-container .item { width: 100%;}
-    .mobile-container .item .screens{ flex-direction: row; }
+    .mobile-container .item .screens{ @include flex-direction(row); }
     .mobile-container .item .img-container{ width: 50%; }
     #title{
         font-size: 1em;

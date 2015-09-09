@@ -633,6 +633,11 @@ a {
   .graphic-container #living-community .screens,
   .smart-suds-container #living-community .screens,
   .web-container #living-community .screens {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row; }
   .mobile-container #living-community .line,
   .graphic-container #living-community .line,
@@ -675,6 +680,11 @@ a {
     width: 100%; }
 
   .mobile-container .item .screens {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row; }
 
   .mobile-container .item .img-container {
