@@ -1,1 +1,1 @@
-Victoria Shi’s personal portfolio - Summer 2015.
+Victoria Shi’s personal portfolio - Fall 2015.
