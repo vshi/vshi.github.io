@@ -87,8 +87,8 @@ a{
         font-size: 1em;
     }
     .contact-links-container{ 
-        display: flex;
-        justify-content: center;
+        @include flexbox;
+        @include justify-content(center);
     }
     img{ max-width: 80%; }
     
@@ -168,11 +168,11 @@ a{
     margin-right: auto;
     margin-left: auto;
     background-color: white;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    @include align-items(center);
+    @include flexbox;
+    @include flex-wrap(wrap);
+    @include flex-direction(row);
+    @include justify-content(space-around);
     .item{
         border: 1px solid #f7f7f7;
         margin-bottom: 1%;
@@ -226,8 +226,8 @@ a{
         &:nth-of-type(even){background-color: white;}
         &.full-vertical{
             .screens{
-                flex-direction: column;
-                flex-wrap: wrap; 
+                @include flex-direction(column);
+                @include flex-wrap(wrap);
                 width: 100%;
             }
         }
@@ -236,8 +236,8 @@ a{
             margin-right: auto;
             margin-left: auto;
             max-width: 800px;
-            display: flex;
-            justify-content: center;
+            @include flexbox;
+            @include justify-content(center);
         }
         img{ max-width: 100%; }
         .caption{
@@ -285,8 +285,8 @@ a{
     }
     .item .screens{
         width: 100%;
-        flex-wrap: wrap;
-        align-items: center;
+        @include flex-wrap(wrap);
+        @include align-items(center);
     }
     .img-container{
         padding: 40px 0;
@@ -317,8 +317,8 @@ a{
     }
     #final-app{
         .screens{ 
-            flex-wrap: wrap;
-            justify-content: center;
+            @include flex-wrap(wrap);
+            @include justify-content(center);
         }
         .img-container{ max-width: 33%; }
         
@@ -326,7 +326,7 @@ a{
 }
 #living-community{
     .screens{
-        flex-wrap: wrap;
+        @include flex-wrap(wrap);
     }
     .caption{
         color: lightgray;
@@ -371,8 +371,8 @@ a{
     .smart-suds-container{
         #final-app{
             .screens{ 
-                flex-wrap: wrap;
-                justify-content: center;
+                @include flex-wrap(wrap);
+                @include justify-content(center);
             }
             .img-container{ max-width: 100%; }
 
@@ -386,8 +386,8 @@ a{
         #living-community{
             padding: 20px;
             .screens{ 
-                flex-direction: column;
-                flex-wrap: wrap; 
+                @include flex-direction(column);
+                @include flex-wrap(wrap);
                 width: 100%;
             }
             .img-container{ width: 100%;}
@@ -420,11 +420,11 @@ a{
             width: 30%; 
             margin-right: 10px;
         }
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flexbox;
+        @include flex-wrap(wrap);
+        @include flex-direction(row);
+        @include justify-content(center);
+        @include align-items(center);
     }
     .illustration-container .item { width: 100%;}
     .mobile-container .item .screens{ flex-direction: row; }
