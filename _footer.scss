@@ -1,0 +1,11 @@
+@import "colors.scss";
+.footer{
+    @extend .text-light;
+    color: white;
+    background-color: $red;
+    height: 30px;
+    p{
+        line-height: 30px;
+        margin-left: 15px;
+    }
+}

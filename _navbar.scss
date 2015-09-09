@@ -1,0 +1,82 @@
+.top{
+    position: relative;
+    background-color: white;
+    //background-image: url(images/header.jpg);
+    background-position: left center;
+    background-size: 120% auto;
+    width: 100vw;
+    height: 10vw;
+    min-height: 50px;
+    max-height: 100px;
+    
+}
+.navbar{
+    position: absolute;
+    left: 10vw;
+    bottom: 10px;
+    max-width: 90vw;
+    ul li{
+        padding: 2px 5px;
+        @extend .text-light;
+        color: white;
+       display: inline-block; 
+        a{
+            @extend .text-emphasis;
+            color: black;
+        }
+        a:hover { color: $red; }
+        a:active{ color: $red; }
+    }
+    .underbar{
+        height: 2px;
+        background-color: $red;
+    }
+}
+.navbar-icon{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 10vw;
+    height: 10vw;
+    min-height: 50px;
+    max-height: 100px;
+    min-width: 50px;
+    max-width: 100px;
+    background-color: white;
+    position: absolute;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width : 500px) {
+    .top{
+        height: auto;
+        min-height: inherit;
+    }
+    .navbar-icon{
+        padding: 0;
+        margin-top: 5px;
+        position: static; 
+        overflow: hidden;
+        float: none;
+        text-align: center;
+        min-width: 100vw;
+        display: block;
+        img{
+            display: inline-block;
+            margin-right: auto;
+            margin-left: auto;
+            height: 100%;
+            width: auto;
+        }
+    }
+    .navbar{
+        padding-left: 5px;
+        padding-bottom: 5px;
+        position: static; 
+        display: block;
+        width: auto;
+        ul li a { font-size: .6em; }
+    }
+    
+}
