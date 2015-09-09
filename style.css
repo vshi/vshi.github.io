@@ -72,7 +72,7 @@
     width: 100%;
     height: auto; }
 
-@media only screen and (max-width: 500px), (max-device-width: 500px) {
+@media only screen and (max-width: 500px) {
   .top {
     height: auto;
     min-height: inherit; }
