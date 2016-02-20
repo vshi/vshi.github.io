@@ -413,6 +413,20 @@ a {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center; }
+  .mobile-container .item .screens#miwok,
+  .graphic-container .item .screens#miwok,
+  .smart-suds-container .item .screens#miwok,
+  .web-container .item .screens#miwok {
+    width: 90%;
+    max-width: 900px;
+    flex-wrap: wrap; }
+    .mobile-container .item .screens#miwok .img-container,
+    .graphic-container .item .screens#miwok .img-container,
+    .smart-suds-container .item .screens#miwok .img-container,
+    .web-container .item .screens#miwok .img-container {
+      min-width: 80px;
+      width: 33%;
+      max-width: 150px; }
   .mobile-container .item img,
   .graphic-container .item img,
   .smart-suds-container .item img,
@@ -516,6 +530,11 @@ a {
   .up-button:hover {
     cursor: pointer;
     opacity: 0.5; }
+
+.mobile-container .item:nth-of-type(odd) {
+  background-color: white; }
+.mobile-container .item:nth-of-type(even) {
+  background-color: #f7f7f7; }
 
 /* Small screens ----------- */
 @media only screen and (max-width: 500px), (max-device-width: 500px) {

@@ -239,6 +239,16 @@ a{
             @include flexbox;
             @include justify-content(center);
         }
+        .screens#miwok{
+            width: 90%;
+            max-width: 900px;
+            flex-wrap: wrap;
+            .img-container{
+                min-width: 80px;
+                width: 33%;
+                max-width: 150px;
+            }
+        }
         img{ max-width: 100%; }
         .caption{
             padding: 40px 0;
@@ -351,7 +361,14 @@ a{
         opacity: 0.5;
     }
 }
-
+.mobile-container{
+    .item:nth-of-type(odd){
+        background-color: white;
+    }
+    .item:nth-of-type(even){
+        background-color: #f7f7f7;
+    }
+}
 /* Small screens ----------- */
 @media only screen and (max-width : 500px), (max-device-width: 500px) {
     .contact{
