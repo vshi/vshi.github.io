@@ -56,6 +56,7 @@ a{
 .large-banner{
     width: 100vw;
     height: 40vw;
+    min-height: 250px;
     max-height: 400px;
     text-align: center;
 }
@@ -336,9 +337,10 @@ a{
     }
 }
 #chaos-reigns{
-    height: 400px;
+    width: 100%;
+    height: 320px;
     background: url('/images/100_days/chaos_reigns-thumb-dark.png') no-repeat center;
-    width: 500px;
+    @include background-size(contain);
     &:hover{
         @include transition(background-image 0.5s ease-in-out);
         background-image: url('/images/100_days/chaos_reigns-thumb-light.png');
@@ -395,7 +397,6 @@ a{
                 @include justify-content(center);
             }
             .img-container{ max-width: 100%; }
-
         }
     }
     .mobile-container,

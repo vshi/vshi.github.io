@@ -50,8 +50,10 @@
 }
 @media only screen and (max-width : 500px){
     .top{
+        text-align: center;
         height: auto;
         min-height: inherit;
+        box-sizing: border-box;
     }
     .navbar-icon{
         padding: 0;
@@ -71,12 +73,14 @@
         }
     }
     .navbar{
+        text-align: center;
         padding-left: 5px;
         padding-bottom: 5px;
         position: static; 
         display: block;
         width: auto;
-        ul li a { font-size: .6em; }
+        margin-bottom: 10px;
+        ul li a { font-size: 1em; }
     }
     
 }

@@ -74,8 +74,10 @@
 
 @media only screen and (max-width: 500px) {
   .top {
+    text-align: center;
     height: auto;
-    min-height: inherit; }
+    min-height: inherit;
+    box-sizing: border-box; }
 
   .navbar-icon {
     padding: 0;
@@ -94,13 +96,15 @@
       width: auto; }
 
   .navbar {
+    text-align: center;
     padding-left: 5px;
     padding-bottom: 5px;
     position: static;
     display: block;
-    width: auto; }
+    width: auto;
+    margin-bottom: 10px; }
     .navbar ul li a {
-      font-size: .6em; } }
+      font-size: 1em; } }
 .grid-sizer,
 .grid-item {
   width: 20%;
@@ -216,6 +220,7 @@ a {
 .large-banner, #title, #about, .header {
   width: 100vw;
   height: 40vw;
+  min-height: 250px;
   max-height: 400px;
   text-align: center; }
 
@@ -558,9 +563,15 @@ a {
   max-width: 33%; }
 
 #chaos-reigns {
-  height: 400px;
+  width: 100%;
+  height: 320px;
   background: url("/images/100_days/chaos_reigns-thumb-dark.png") no-repeat center;
-  width: 500px; }
+  -webkit-background-size: contain;
+  -khtml-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; }
   #chaos-reigns:hover {
     -webkit-transition: background-image 0.5s ease-in-out;
     -moz-transition: background-image 0.5s ease-in-out;
