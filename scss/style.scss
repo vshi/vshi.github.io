@@ -3,6 +3,7 @@
 @import "footer.scss";
 @import "navbar.scss";
 @import "colors.scss";
+@import "masonry.scss";
 *{
     padding: 0;
     margin: 0;
@@ -334,19 +335,21 @@ a{
         
     }
 }
+#chaos-reigns{
+    height: 400px;
+    background: url('/images/100_days/chaos_reigns-thumb-dark.png') no-repeat center;
+    width: 500px;
+    &:hover{
+        @include transition(background-image 0.5s ease-in-out);
+        background-image: url('/images/100_days/chaos_reigns-thumb-light.png');
+    }
+}
+.caption.light{
+    color: lightgray;
+}
 #living-community{
-    .screens{
-        @include flex-wrap(wrap);
-    }
-    .caption{
-        color: lightgray;
-        .description{
-            border-left: 1px solid lightgray;
-        }
-    }
-    .img-container{
-        width: 33%;
-    }
+    .screens{ @include flex-wrap(wrap); }
+    .img-container{ width: 33%; }
 }
 .up-button{
     &.dark{ background-image: url("/images/icons/arrow_u_black.png") }

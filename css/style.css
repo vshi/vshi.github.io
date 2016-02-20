@@ -101,6 +101,57 @@
     width: auto; }
     .navbar ul li a {
       font-size: .6em; } }
+.grid-sizer,
+.grid-item {
+  width: 20%;
+  box-sizing: border-box; }
+
+.grid-item--width-2 {
+  width: 40%; }
+
+.grid-item {
+  float: left; }
+
+.grid-item img {
+  display: block;
+  max-width: 100%; }
+
+#hundred-days {
+  background-color: #ecf0f1;
+  padding: 10% 5%;
+  font-size: 1em;
+  box-sizing: border-box; }
+  #hundred-days p {
+    text-indent: 1em; }
+  #hundred-days hr {
+    margin: 10px 0; }
+
+@media only screen and (min-width: 900px) and (max-width: 1250px) {
+  .grid-sizer,
+  .grid-item {
+    width: 25%; }
+
+  .grid-item--width-2 {
+    width: 50%; } }
+@media only screen and (min-width: 550px) and (max-width: 900px) {
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%; }
+
+  .grid-item--width-2 {
+    width: 66.667%; } }
+@media only screen and (max-width: 550px) and (min-width: 320px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%; }
+
+  .grid-item--width-2 {
+    width: 100%; } }
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%; } }
 * {
   padding: 0;
   margin: 0; }
@@ -506,15 +557,26 @@ a {
 .smart-suds-container #final-app .img-container {
   max-width: 33%; }
 
+#chaos-reigns {
+  height: 400px;
+  background: url("/images/100_days/chaos_reigns-thumb-dark.png") no-repeat center;
+  width: 500px; }
+  #chaos-reigns:hover {
+    -webkit-transition: background-image 0.5s ease-in-out;
+    -moz-transition: background-image 0.5s ease-in-out;
+    -ms-transition: background-image 0.5s ease-in-out;
+    -o-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
+    background-image: url("/images/100_days/chaos_reigns-thumb-light.png"); }
+
+.caption.light {
+  color: lightgray; }
+
 #living-community .screens {
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-#living-community .caption {
-  color: lightgray; }
-  #living-community .caption .description {
-    border-left: 1px solid lightgray; }
 #living-community .img-container {
   width: 33%; }
 
