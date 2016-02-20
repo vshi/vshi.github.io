@@ -95,7 +95,7 @@ a{
 }
 #about{
     background-color: black;
-    background-image: url(images/sf-night.jpg);
+    background-image: url(/images/sf-night.jpg);
     background-size: cover;
     background-position: center center;
     text-align: center;
@@ -155,11 +155,11 @@ a{
         height: 2em;
         @include vertical-align();
     }
-    &#header-illustration { background-image: url(images/illustration.JPG);}
-    &#header-mobile { background-image: url(images/mobile.jpg);}
-    &#header-graphic { background-image: url(images/graphic.jpg);}
-     &#header-smart-suds { background-image: url(images/smart-suds/laundromat.jpg);}
-    &#header-web { background-image: url(images/stripes2-edited.jpg);}
+    &#header-illustration { background-image: url(/images/illustration.JPG);}
+    &#header-mobile { background-image: url(/images/mobile.jpg);}
+    &#header-graphic { background-image: url(/images/graphic.jpg);}
+     &#header-smart-suds { background-image: url(/images/smart-suds/laundromat.jpg);}
+    &#header-web { background-image: url(/images/stripes2-edited.jpg);}
 }
 .illustration-container{
     text-align: center;
@@ -349,12 +349,12 @@ a{
     }
 }
 .up-button{
-    &.dark{ background-image: url("images/icons/arrow_u_black.png") }
+    &.dark{ background-image: url("/images/icons/arrow_u_black.png") }
     margin-left: -90%;
     display: inline-block;
     height: 3em;
     width: 3em;
-    background: url("images/icons/arrow_u.png") no-repeat center; 
+    background: url("/images/icons/arrow_u.png") no-repeat center; 
     background-size: contain;
     &:hover{
         cursor: pointer;
@@ -494,7 +494,7 @@ a{
 }
 @media only screen and (min-width : 950px){
     .web-container #stitch-container{
-             background-image: url("images/web/twindom/twindom.com-stitch-blurred.jpg");
+             background-image: url("/images/web/twindom/twindom.com-stitch-blurred.jpg");
             background-position: right center;
             background-size: cover;
         img{
