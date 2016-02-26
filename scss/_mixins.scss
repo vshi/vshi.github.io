@@ -1,4 +1,4 @@
-@mixin css3-prefix($property, $value) {
+cs@mixin css3-prefix($property, $value) {
   -webkit-#{$property}: #{$value};
    -khtml-#{$property}: #{$value};
      -moz-#{$property}: #{$value};
